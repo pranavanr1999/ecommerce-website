@@ -3613,8 +3613,9 @@ p.checkout-coupon input[type=submit]{
 	border: 1px solid #ebebeb;
   }
 
-#list {
-	grid-template-columns: repeat(3, 1fr);
+.product_list {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 }
 
 
