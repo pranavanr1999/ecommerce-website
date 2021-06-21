@@ -3615,7 +3615,7 @@ p.checkout-coupon input[type=submit]{
 
 .product_list {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
 
