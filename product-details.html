@@ -36,7 +36,10 @@
 		<!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css" />
 		<!-- modernizr css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -270,6 +273,10 @@
 		</div>
 		<!-- mainmenu-area-end -->
 		
+
+		<!-- Button trigger modal -->
+
+
 		<!-- all-hyperion-page-start -->
 		<div class="all-hyperion-page">
 			<div class="container">
@@ -339,12 +346,32 @@
                                         
                                        
                                         <br/>
+
+										<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+											Launch demo modal
+										  </button> -->
+										  
+										  <!-- Modal -->
+										  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+											  <div class="modal-content">
+												
+												<div class="modal-body">
+												  <span style="font-size: large; font-weight: bold; color: lightgreen; margin-right: 20px;" class="txt">Item Added to Cart</span>	
+												  <img src="https://image.flaticon.com/icons/png/128/845/845646.png" height="70px" width="70px">
+												</div>
+												<div class="modal-footer">
+												  <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shoping</button>
+												  <a href="checkout.html"><button type="button" class="btn btn-primary">checkout</button></a>
+												</div>
+											  </div>
+											</div>
+										  </div>
                                         
                                         <div class="quick-add-to-cart">
 											<form method="post" class="cart">
 												
-												<button class="btn btn-lg btn-success" type="submit"><span class="lnr lnr-cart"></span>Add to Cart</button>
-                                                
+												<button class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModalCenter" type="button"><span class="lnr lnr-cart"></span>Add to Cart</button>
                                                 <!-- <button data-toggle="modal" data-target="#myModal" class="single_add_to_cart_button hyper-page" type="button"><span class="lnr lnr-cart"></span>Bulk Order</button> -->
 											</form>
 										</div>
@@ -352,7 +379,7 @@
                                         
                                         <div class="quick-add-to-cart">
 											
-											<button type="button" class="btn btn-lg btn-warning col-sm-12"><span class="lnr lnr-cart"></span>Buy Now</button>	
+										<a href="checkout.html"><button  type="button" class="btn btn-lg btn-warning col-sm-12"><span class="lnr lnr-cart"></span>Buy Now</button></a>	
 												
                                                 
                                                 
@@ -830,5 +857,8 @@
         <script src="js/plugins.js"></script>
 		<!-- main js -->
         <script src="js/main.js"></script>
+		<script>
+
+		</script>
     </body>
 </html>
